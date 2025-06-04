@@ -4,7 +4,8 @@ Zetacore Daemon (server)
 
 ### Options
 
-```
+```bash
+zetacored
   -h, --help                help for zetacored
       --home string         directory for config and data 
       --log_format string   The logging format (json|plain) 
@@ -246,7 +247,7 @@ Utilities for managing application configuration
 
 Outputs all config values that are different from the app.toml defaults.
 
-```
+```bash
 zetacored config diff [target-version] [app-toml-path] [flags]
 ```
 
@@ -310,13 +311,13 @@ Outputs the folder used as the binary home. No home directory is set when using 
 
 Outputs the folder used as the binary home. In order to change the home directory path, set the $APPD_HOME environment variable, or use the "--home" flag.
 
-```
+```bash
 zetacored config home [flags]
 ```
 
 ### Options
 
-```
+```bash
   -h, --help   help for home
 ```
 
@@ -414,7 +415,7 @@ View the config file
 
 View the config file. The [config] argument must be the path of the file when using the `confix` tool standalone, otherwise it must be the name of the config file without the .toml extension.
 
-```
+```bash
 zetacored config view [config] [flags]
 ```
 
